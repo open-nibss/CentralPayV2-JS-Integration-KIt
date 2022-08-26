@@ -62,7 +62,7 @@ function CentralpayCheckout(data) {
   //========================================================================================
   iframe.setAttribute(
     'src',
-    `https://centralpaytest.nibss-plc.com.ng/?q=${encodeURIComponent(
+    `https://test-centralpay2.nibss-plc.com.ng/?q=${encodeURIComponent(
       stringifiedData
     )}`
   );
