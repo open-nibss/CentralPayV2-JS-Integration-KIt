@@ -23,7 +23,7 @@ function CentralpayCheckout(data) {
   //========================================================================================
   // const url = `http://localhost:3000/?q=${encodeURIComponent(stringifiedData)}`;
   // window.location.replace(url);
-
+  
   //========================================================================================
   /*                                                                                      *
    *                                Test Environment                                      *
@@ -32,5 +32,11 @@ function CentralpayCheckout(data) {
   const url = `https://test-centralpay2.nibss-plc.com.ng/?q=${encodeURIComponent(stringifiedData)}`;
   window.location.replace(url);
 
- 
+  //========================================================================================
+  /*                                                                                      *
+   *                                Production Environment                                *
+   *                                                                                      */
+  //========================================================================================
+  // const url = `https://centralpay2.nibss-plc.com.ng/?q=${encodeURIComponent(stringifiedData)}`;
+  // window.location.replace(url);
 }
