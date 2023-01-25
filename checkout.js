@@ -27,7 +27,13 @@ function CentralpayCheckout(data) {
     responseUrl +
     secretKey;
   const hash = sha256(dataToHash);
-  const payload = { ...data, hash };
+  const payload = { amount,
+    currency,
+    merchantId,
+    productDescription,
+    productId,
+    responseUrl,
+    transactionId, hash };
 
   const stringifiedData = JSON.stringify(payload, function (key, val) {
     if (typeof val === 'function') {
